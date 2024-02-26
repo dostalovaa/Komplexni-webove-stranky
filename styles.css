@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+header {
+  background-color: rgb(203, 21, 21);
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.navigation-logo-second {
+  flex-basis: calc(100% / 3);
+  margin-left: 0;
+}
+.navigation-logo-second img {
+  width: 130px;
+}
+.navigation-logo {
+  flex-basis: calc(100% / 3);
+  text-align: center;
+}
+.navigation-logo-main img {
+  width: 250px;
+}
+nav {
+  flex-basis: calc(100% / 3);
+  text-align: end;
+  margin-right: 15px;
+}
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 10px;
+}
+nav li a {
+  text-decoration: none;
+  color: #000000cc;
+}
+.mode-toggle {
+  font-size: 20px;
+  text-align: end;
+  position: relative;
+}
+.fa-sun {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+.fa-moon {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+}
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+.img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container {
+  display: flex;
+}
+
+.img-wrapper img {
+  height: 450px;
+
+  max-width: 100%;
+  transition: all 0.5s linear;
+}
+.form-container {
+  width: 60%;
+  padding: 80px 40px;
+}
+.form-card {
+  background-color: #000000d5;
+  color: white;
+  border-radius: 15px;
+  padding: 32px;
+}
+.form-text {
+  padding-bottom: 8px;
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center;
+}
+.notificationName,
+.notificationEmail,
+.notificationPassword {
+  display: none;
+  padding-bottom: 8px;
+}
+.form-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.name {
+  outline: none;
+  border: none;
+  width: 230px;
+  background: #e8e8e8;
+  color: rgba(0, 0, 0, 0.835);
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 6px;
+}
+.email {
+  outline: none;
+  border: none;
+  width: 230px;
+  background: #e8e8e8;
+  color: rgba(0, 0, 0, 0.835);
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 6px;
+}
+.password {
+  outline: none;
+  border: none;
+  width: 230px;
+  background: #e8e8e8;
+  color: rgba(0, 0, 0, 0.835);
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 6px;
+}
+.password-check {
+  outline: none;
+  border: none;
+  width: 230px;
+  background: #e8e8e8;
+  color: rgba(0, 0, 0, 0.835);
+  padding: 10px;
+  border-radius: 15px;
+  margin-bottom: 6px;
+}
+
+.account-info {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 24px;
+  font-weight: 100;
+  color: white;
+}
+.submit {
+  outline: none;
+  border: none;
+  width: 90px;
+  color: rgb(0, 0, 0, 0.835);
+  background-color: #e8e8e8;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.to-top {
+  background-color: #e8e8e8;
+  color: rgb(0, 0, 0, 0.835);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 30px;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.835);
+  color: white;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+}

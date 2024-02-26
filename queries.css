@@ -1,0 +1,62 @@
+@media (max-width: 1242px) {
+  header {
+    position: relative;
+  }
+  header nav {
+    display: none;
+    position: absolute;
+    top: 100px;
+    background-color: rgba(204, 21, 21);
+    width: 100%;
+  }
+  header nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .fa-sun {
+    top: -216px;
+    right: 27px;
+  }
+  .fa-moon {
+    top: -216px;
+    right: 27px;
+  }
+  .menu-icon {
+    display: block;
+    font-size: 23px;
+    flex-basis: calc(100% / 3);
+    text-align: end;
+  }
+}
+@media (min-width: 1242px) {
+  header nav {
+    display: block !important;
+  }
+}
+
+@media (max-width: 1020px) {
+  .name,
+  .email,
+  .password,
+  .password-check {
+    width: 200px;
+  }
+}
+@media (max-width: 744px) {
+  .row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 513px) {
+  .form-text {
+    font-size: 18px;
+  }
+  .name,
+  .email,
+  .password,
+  .password-check {
+    width: 100px;
+  }
+}
